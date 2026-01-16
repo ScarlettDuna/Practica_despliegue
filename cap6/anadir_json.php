@@ -11,3 +11,4 @@ if(isset($_SESSION['carrito'][$cod])){
 }else{
 	$_SESSION['carrito'][$cod] = $unidades;		
 }
+/* Comentario de Arantxa Reinoso */
