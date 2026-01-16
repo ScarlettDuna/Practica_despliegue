@@ -13,12 +13,12 @@ if ($stock - $unidades >= 0){
            if ( $stock - $_SESSION['carrito'][$cod] - $unidades >= 0 ) {
 	        $_SESSION['carrito'][$cod] += $unidades;
            }else{
-               $mensaje = "no hay suficiente stock";
+               $mensaje = "No hay suficiente stock.";
            }
     }else{
 	$_SESSION['carrito'][$cod] = $unidades;	
     }	
 }else {
-   $mensaje = "no hay suficiente stock";
+   $mensaje = "No hay suficiente stock.";
 }
 header("Location: productos.php?categoria=". $_SESSION['codCategoria'] . "&mensaje=$mensaje");
