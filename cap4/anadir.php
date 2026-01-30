@@ -1,7 +1,7 @@
 <?php 
 /*comprueba que el usuario haya abierto sesión o redirige*/
 require_once 'sesiones.php';
-comprobar_sesion()
+comprobar_sesion();
 $cod = $_POST['cod'];
 $stock = $_POST['stock'];
 $unidades = (int)$_POST['unidades'];
